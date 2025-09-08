@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build SDL2 game",
+            "type": "shell",
+            "command": "C:/mingw64/bin/g++.exe",
+            "args": [
+            "-IC:/Users/renan/Jogo_C++/external/SDL2/include",
+            "Main.cpp",
+            "-LC:/Users/renan/Jogo_C++/external/SDL2/lib",
+            "-lmingw32",
+            "-lSDL2main",
+            "-lSDL2",
+            "-mwindows",
+            "-o",
+            "output/Jogo.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

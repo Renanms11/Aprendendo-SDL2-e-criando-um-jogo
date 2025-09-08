@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.18)
+project(Argonaut LANGUAGES CXX)
+
+# Diretórios do SDL2
+set(SDL2_PATH "${CMAKE_SOURCE_DIR}/external/SDL2")
+include_directories("${SDL2_PATH}/include")
+link_directories("${SDL2_PATH}/lib")
+
+
+# Executável
+add_executable(MyEngine Main.cpp)
+
+# Linkagem correta
+target_link_libraries(MyEngine
+    mingw32
+    SDL2main
+    SDL2
+    
+)

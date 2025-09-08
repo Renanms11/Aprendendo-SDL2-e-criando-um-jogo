@@ -1,0 +1,3 @@
+C:/Users/renan/Jogo_C++/build/CMakeFiles/MyEngine.dir
+C:/Users/renan/Jogo_C++/build/CMakeFiles/edit_cache.dir
+C:/Users/renan/Jogo_C++/build/CMakeFiles/rebuild_cache.dir

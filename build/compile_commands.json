@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/renan/Jogo_C++/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MyEngine.dir/includes_CXX.rsp -g -o CMakeFiles\\MyEngine.dir\\Main.cpp.obj -c C:\\Users\\renan\\Jogo_C++\\Main.cpp",
+  "file": "C:/Users/renan/Jogo_C++/Main.cpp",
+  "output": "CMakeFiles/MyEngine.dir/Main.cpp.obj"
+}
+]
