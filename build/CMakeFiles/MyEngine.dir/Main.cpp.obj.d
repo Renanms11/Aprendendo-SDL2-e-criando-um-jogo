@@ -1,4 +1,15 @@
 CMakeFiles/MyEngine.dir/Main.cpp.obj: C:\Users\renan\Jogo_C++\Main.cpp \
+ C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+ C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:/mingw64/include/c++/15.2.0/string \
  C:/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -11,18 +22,9 @@ CMakeFiles/MyEngine.dir/Main.cpp.obj: C:\Users\renan\Jogo_C++\Main.cpp \
  C:/mingw64/include/c++/15.2.0/bits/postypes.h \
  C:/mingw64/include/c++/15.2.0/cwchar \
  C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
- C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
- C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
- C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
- C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
- C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
- C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
- C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
  C:/mingw64/x86_64-w64-mingw32/include/corecrt_wctype.h \
- C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
- C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
  C:/mingw64/include/c++/15.2.0/type_traits \
  C:/mingw64/include/c++/15.2.0/bits/version.h \
@@ -40,8 +42,6 @@ CMakeFiles/MyEngine.dir/Main.cpp.obj: C:\Users\renan\Jogo_C++\Main.cpp \
  C:/mingw64/include/c++/15.2.0/clocale \
  C:/mingw64/x86_64-w64-mingw32/include/locale.h \
  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
- C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
- C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:/mingw64/include/c++/15.2.0/iosfwd \
  C:/mingw64/include/c++/15.2.0/cctype \
  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
@@ -280,4 +280,6 @@ CMakeFiles/MyEngine.dir/Main.cpp.obj: C:\Users\renan\Jogo_C++\Main.cpp \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_timer.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_version.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_locale.h \
- C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_misc.h
+ C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_misc.h \
+ C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_image.h \
+ C:/Users/renan/Jogo_C++/external/SDL2/include/SDL.h

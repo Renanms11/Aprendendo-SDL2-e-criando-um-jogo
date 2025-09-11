@@ -1,118 +1,112 @@
-#include <string>
 #include <stdio.h>
+#include <string>
 #include <SDL.h>
+#include <SDL_image.h>
 
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 
-bool init();
-bool loadMedia();
-SDL_Surface* loadSurface(std::string path);
-void close();
-
-SDL_Window* gWindow = nullptr;
+SDL_Window* gwindow = nullptr;
 SDL_Surface* gScreenSurface = nullptr;
-SDL_Surface* gStretchedSurface = NULL;
+SDL_Surface* gImageSurface = nullptr;
+
+bool init ();
+bool loadMedia();
+void close();
+SDL_Surface* loadSurface(std::string path);
 
 bool init(){
     bool sucess = true;
-    if(SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO) < 0){
-        printf("Erro ao iniciar o SDL!! SDL Erro: %s\n",SDL_GetError());
+    if(SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) < 0){
+        printf("Erro ao iniciar o SDL ! SDL Error: %s\n",SDL_GetError());
         sucess = false;
     }else{
-        gWindow = SDL_CreateWindow("Melhorando carregamento de imagem",SDL_WINDOWPOS_CENTERED,
-            SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
-        if(gWindow == nullptr){
-            printf("Erro ao abrir a janela!! SDL Erro: %s\n",SDL_GetError());
+        gwindow = SDL_CreateWindow("Argonaut",SDL_WINDOWPOS_UNDEFINED,SDL_WINDOWPOS_UNDEFINED,SCREEN_WIDTH,SCREEN_HEIGHT,SDL_WINDOW_SHOWN);
+        if(gwindow == nullptr){
+            printf("Erro ao abrir a janela ! SDL Error: %s\n",SDL_GetError());
             sucess = false;
         }else{
-            gScreenSurface = SDL_GetWindowSurface(gWindow);
+            //inicializar o carregador png
+            int imgFlags = IMG_INIT_PNG;
+            if(!IMG_Init(imgFlags) & imgFlags){
+                printf("Erro ao inicializar SDL IMAGE! SDL Error: %s\n",IMG_GetError());
+                sucess = false;
+            }else{
+                 gScreenSurface = SDL_GetWindowSurface( gwindow );
+            }
         }
-
     }
     return sucess;
 }
 
-bool loadMedia(){
-    bool sucess = true;
-    gStretchedSurface = loadSurface("./assets/stretch.bmp");
-    if(gStretchedSurface == nullptr){
-       printf("Problema a carregar a imagem na surface!");
-       sucess = false;
-    }
-    return sucess ;
-}
 
 SDL_Surface* loadSurface(std::string path){
-   
-    // imagem final otimizada
+    // surface para  otimizar a imagem
     SDL_Surface* optimizedSurface = nullptr;
-
-    //carregando a imagem especifica
-    SDL_Surface* loadedSurface = SDL_LoadBMP(path.c_str());
+    // surface para carregar a imagem png
+    SDL_Surface* loadedSurface = IMG_Load(path.c_str());
     if(loadedSurface == nullptr){
-        printf("Problema ao carregar a imagem !! SDL Error: %s\n",SDL_GetError());
+        printf("Não foi possivel carregar a imagem %s! SDL_image Error: %s\n",
+            path.c_str() ,IMG_GetError());
     }else{
-        optimizedSurface = SDL_ConvertSurface(loadedSurface, gScreenSurface ->format,0);
-        if(optimizedSurface == nullptr){
-            printf("Não foi possivel otimizar a imagem %s! SDL Error: %s\n",
-                path.c_str(),SDL_GetError());
-
+        //convertendo a imagem no formato da tela
+        optimizedSurface = SDL_ConvertSurface(loadedSurface,gScreenSurface-> format,0 );
+        if(optimizedSurface ==NULL){
+            printf("Não foi possivel otimizar a imagem %s! SDL_image Error: %s\n",
+            path.c_str() ,IMG_GetError());
         }
         SDL_FreeSurface(loadedSurface);
-    }
-    return optimizedSurface;
-
+        }
+        return optimizedSurface;
 }
 
+
+
+bool loadMedia(){
+    bool sucess = true;
+    gImageSurface = loadSurface("./assets/loaded.png");
+    if(gImageSurface == nullptr){
+        printf( "Falha ao carregar a imagem!\n" );
+        sucess=false;
+    }
+    return sucess;
+}
 
 void close(){
-    SDL_FreeSurface( gStretchedSurface );
-	gStretchedSurface = NULL;
+    SDL_FreeSurface(gImageSurface);
+    gImageSurface = nullptr;
 
-	//Destroy window
-	SDL_DestroyWindow( gWindow );
-	gWindow = NULL;
-
-	//Quit SDL subsystems
-	SDL_Quit();
-
+    SDL_DestroyWindow(gwindow);
+    IMG_Quit();
+    SDL_Quit();
 }
 
 
-int main(int argc,char* argv[]){
+
+int main(int argc , char* argv[]){
 
     if(!init()){
-        printf("Problema de iniciar o programa");
+        printf("Problema ao iniciar o jogo!");
     }else{
         if(!loadMedia()){
-            printf("Problema de iniciar o programa");
+            printf("Problema ao iniciar o jogo!");
         }else{
             bool quit = false;
             SDL_Event e;
-            while(!quit){
-                while(SDL_PollEvent(&e) !=0){
-                    if(e.type == SDL_QUIT ){ 
-                        quit = true;
-                        }
-                        
-                    }
-                    // esticando  a imagme
-                        SDL_Rect stretchRect;
-                        stretchRect.x =0;
-                        stretchRect.y=0;
-                        stretchRect.w = SCREEN_WIDTH;
-                        stretchRect.h= SCREEN_HEIGHT;
-                        SDL_BlitScaled(gStretchedSurface,nullptr,gScreenSurface,&stretchRect);
-                        SDL_UpdateWindowSurface(gWindow);
-
+            while (quit == false){
+              while(SDL_PollEvent(&e) != 0){
+                if(e.type == SDL_QUIT) quit = true;
                 }
-            }
+            SDL_BlitSurface( gImageSurface, NULL, gScreenSurface, NULL );
+            //Update the surface
+            SDL_UpdateWindowSurface( gwindow);
 
+            }
+            
         }
 
-    
+    }
     close();
     return 0;
 }
