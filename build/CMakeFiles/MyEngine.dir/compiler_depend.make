@@ -21,6 +21,7 @@ CMakeFiles/MyEngine.dir/Main.cpp.obj: C:/Users/renan/Jogo_C++/Main.cpp \
   C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_haptic.h \
   C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_hidapi.h \
   C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_hints.h \
+  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_image.h \
   C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_joystick.h \
   C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_keyboard.h \
   C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_keycode.h \
@@ -327,7 +328,7 @@ C:/mingw64/x86_64-w64-mingw32/include/ctype.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxbf16intrin.h:
+C:/mingw64/x86_64-w64-mingw32/include/corecrt_wctype.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ammintrin.h:
 
@@ -425,9 +426,7 @@ C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_surface.h:
 
-C:/mingw64/include/c++/15.2.0/bits/version.h:
-
-C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_platform.h:
+C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_keyboard.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_messagebox.h:
 
@@ -453,12 +452,6 @@ C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_hidapi.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_haptic.h:
 
-C:/mingw64/include/c++/15.2.0/bit:
-
-C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_metal.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtransposeintrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pkuintrin.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_guid.h:
@@ -475,7 +468,15 @@ C:/mingw64/include/c++/15.2.0/bits/functexcept.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/lzcntintrin.h:
 
-C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_keyboard.h:
+C:/mingw64/include/c++/15.2.0/bits/allocator.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/errno.h:
+
+C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_cpuinfo.h:
+
+C:/mingw64/include/c++/15.2.0/ext/alloc_traits.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vp2intersectintrin.h:
 
 C:/mingw64/include/c++/15.2.0/ext/type_traits.h:
 
@@ -513,16 +514,6 @@ C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_events.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxfp8intrin.h:
 
-C:/mingw64/include/c++/15.2.0/bits/allocator.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/errno.h:
-
-C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_cpuinfo.h:
-
-C:/mingw64/include/c++/15.2.0/ext/alloc_traits.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vp2intersectintrin.h:
-
 C:/mingw64/include/c++/15.2.0/bits/localefwd.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_blendmode.h:
@@ -553,6 +544,16 @@ C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_error.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_config_windows.h:
 
+C:/mingw64/include/c++/15.2.0/bits/version.h:
+
+C:/mingw64/include/c++/15.2.0/bit:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtransposeintrin.h:
+
+C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_metal.h:
+
+C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_platform.h:
+
 C:/mingw64/include/c++/15.2.0/bits/ptr_traits.h:
 
 C:/mingw64/include/c++/15.2.0/bits/postypes.h:
@@ -577,10 +578,6 @@ C:/mingw64/include/c++/15.2.0/bits/predefined_ops.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vpopcntdqintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512cdintrin.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/corecrt.h:
-
 C:/mingw64/include/c++/15.2.0/bits/new_allocator.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitintrin.h:
@@ -588,6 +585,12 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitintrin.h:
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_video.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bf16vlintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512cdintrin.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/corecrt.h:
+
+C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_image.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL.h:
 
@@ -630,6 +633,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pconfigintrin.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/smmintrin.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/begin_code.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxbf16intrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxcomplexintrin.h:
 
@@ -769,6 +774,10 @@ C:/mingw64/include/c++/15.2.0/bits/invoke.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/hresetintrin.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ia32intrin.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xtestintrin.h:
@@ -839,10 +848,6 @@ C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_sensor.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ia32intrin.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
-
 C:/mingw64/include/c++/15.2.0/ext/string_conversions.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_gamecontroller.h:
@@ -852,5 +857,3 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmi2vlintrin.h:
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/corecrt_wctype.h:
