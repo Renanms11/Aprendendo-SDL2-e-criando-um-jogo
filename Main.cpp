@@ -92,18 +92,14 @@ SDL_Texture* loadTexture(std::string path){
 
 bool loadMedia(){
     bool sucess = true;
-    gTexture = loadTexture("./assets/loaded.png");
-    if(gTexture == nullptr){
-        printf( "Falha ao carregar a imagem!\n" );
-        sucess=false;
-    }
+  
+    //não tem nada para carregar
     return sucess;
 }
 
 void close(){
     // Destruindo a textura
-    SDL_DestroyTexture(gTexture);
-    gTexture = nullptr;
+    
     // destruindo o render
     SDL_DestroyRenderer(gRenderer);
     gRenderer = nullptr;
@@ -130,11 +126,36 @@ int main(int argc , char* argv[]){
               while(SDL_PollEvent(&e) != 0){
                 if(e.type == SDL_QUIT) quit = true;
                 }
-                //limpa a tela
-                SDL_RenderClear(gRenderer);
-                // renderiza a textura na tela
-                SDL_RenderCopy(gRenderer,gTexture,NULL,NULL);
-            
+
+                SDL_SetRenderDrawColor(gRenderer,255,255,255,255);
+                SDL_RenderClear(gRenderer); //limpa a tela com a cor passada
+
+                // instancia um quadrado , 
+                SDL_Rect FillRect ={SCREEN_WIDTH/4 , SCREEN_HEIGHT/4,SCREEN_WIDTH/2,SCREEN_HEIGHT/2};
+                SDL_SetRenderDrawColor(gRenderer,255,0,0,255);
+                //// render  um quadrado vermelhor recebe  o render e um quadrado
+                SDL_RenderFillRect(gRenderer,&FillRect);
+                
+                //uma instancia da sctruct quadrado, ponto de partida x e y, largura e altura do quadrado
+                SDL_Rect outlineRect = {SCREEN_WIDTH/6,SCREEN_HEIGHT/6,SCREEN_WIDTH*2/3,SCREEN_HEIGHT *2/3};
+                SDL_SetRenderDrawColor(gRenderer,0,255,0,255);
+                // render  um quadrado verde
+                SDL_RenderDrawRect(gRenderer,&outlineRect);
+
+                //renderizar uma horizontal linha azul
+                SDL_SetRenderDrawColor(gRenderer,0,0,255,255);
+                //renderizar uma horizontal linha azul ponto de partida x , y ponto de chegada x,y
+                SDL_RenderDrawLine(gRenderer,0 , SCREEN_HEIGHT/2 , SCREEN_WIDTH,SCREEN_HEIGHT/2);
+
+                // Desenhando uma linha reta na vertical com pontos amarelos
+                SDL_SetRenderDrawColor(gRenderer,255,255,0,255);
+                
+                for(int i = 0; i < SCREEN_HEIGHT ; i+= 4){
+
+                    SDL_RenderDrawPoint(gRenderer, SCREEN_WIDTH/2 ,i);
+                }
+
+
                 // renderiza
                 SDL_RenderPresent( gRenderer );
 
