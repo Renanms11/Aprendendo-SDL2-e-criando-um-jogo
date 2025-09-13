@@ -92,7 +92,7 @@ SDL_Texture* loadTexture(std::string path){
 
 bool loadMedia(){
     bool sucess = true;
-  
+    gTexture = loadTexture("./assets/viewport.png");
     //não tem nada para carregar
     return sucess;
 }
@@ -130,31 +130,38 @@ int main(int argc , char* argv[]){
                 SDL_SetRenderDrawColor(gRenderer,255,255,255,255);
                 SDL_RenderClear(gRenderer); //limpa a tela com a cor passada
 
-                // instancia um quadrado , 
-                SDL_Rect FillRect ={SCREEN_WIDTH/4 , SCREEN_HEIGHT/4,SCREEN_WIDTH/2,SCREEN_HEIGHT/2};
-                SDL_SetRenderDrawColor(gRenderer,255,0,0,255);
-                //// render  um quadrado vermelhor recebe  o render e um quadrado
-                SDL_RenderFillRect(gRenderer,&FillRect);
-                
-                //uma instancia da sctruct quadrado, ponto de partida x e y, largura e altura do quadrado
-                SDL_Rect outlineRect = {SCREEN_WIDTH/6,SCREEN_HEIGHT/6,SCREEN_WIDTH*2/3,SCREEN_HEIGHT *2/3};
-                SDL_SetRenderDrawColor(gRenderer,0,255,0,255);
-                // render  um quadrado verde
-                SDL_RenderDrawRect(gRenderer,&outlineRect);
+                //viewport, e como renderizar a mesma imagem varias vezes na mesma janela, ->
+                //util para fazer o mini map
 
-                //renderizar uma horizontal linha azul
-                SDL_SetRenderDrawColor(gRenderer,0,0,255,255);
-                //renderizar uma horizontal linha azul ponto de partida x , y ponto de chegada x,y
-                SDL_RenderDrawLine(gRenderer,0 , SCREEN_HEIGHT/2 , SCREEN_WIDTH,SCREEN_HEIGHT/2);
+                // lado esquerdo do alto viewport
+                SDL_Rect topLeftViewport;
+                topLeftViewport.x = 0;
+                topLeftViewport.y = 0;
+                topLeftViewport.w = SCREEN_WIDTH/2 ;
+                topLeftViewport.h = SCREEN_HEIGHT/2;
+                SDL_RenderSetViewport(gRenderer,&topLeftViewport);
+                //renderizando a textura na tela
+                SDL_RenderCopy(gRenderer,gTexture,NULL,NULL);
 
-                // Desenhando uma linha reta na vertical com pontos amarelos
-                SDL_SetRenderDrawColor(gRenderer,255,255,0,255);
-                
-                for(int i = 0; i < SCREEN_HEIGHT ; i+= 4){
 
-                    SDL_RenderDrawPoint(gRenderer, SCREEN_WIDTH/2 ,i);
-                }
+                // lado direito do alto viewport
+                SDL_Rect topRightViewport;
+                topRightViewport.x = SCREEN_WIDTH/2;
+                topRightViewport.y = 0;
+                topRightViewport.w = SCREEN_WIDTH/2;
+                topRightViewport.h = SCREEN_HEIGHT/2;
+                SDL_RenderSetViewport(gRenderer,&topRightViewport);
+                SDL_RenderCopy(gRenderer,gTexture,NULL,NULL);
 
+
+                //viewport completa de baixo
+                SDL_Rect bottomViewport;
+                bottomViewport.x = 0;
+                bottomViewport.y =SCREEN_HEIGHT/2 ;
+                bottomViewport.w =SCREEN_WIDTH ;
+                bottomViewport.h =SCREEN_HEIGHT/2 ;
+                SDL_RenderSetViewport(gRenderer , &bottomViewport);
+                SDL_RenderCopy(gRenderer,gTexture,NULL,NULL);
 
                 // renderiza
                 SDL_RenderPresent( gRenderer );
