@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "MyEngine.exe"
+			"path" : "Argonaut.exe"
 		},
 		{
-			"path" : "MyEngine.pdb"
+			"path" : "Argonaut.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -30,25 +30,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 11,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 7,
+				"line" : 8,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 14,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 6,
+				"line" : 7,
 				"parent" : 0
 			}
 		]
@@ -59,7 +59,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g -std=gnu++17"
 				}
 			],
 			"includes" : 
@@ -67,16 +67,35 @@
 				{
 					"backtrace" : 4,
 					"path" : "C:/Users/renan/Jogo_C++/external/SDL2/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/renan/Jogo_C++/include"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
 			"sourceIndexes" : 
 			[
 				0
 			]
 		}
 	],
-	"id" : "MyEngine::@6890427a1f51a3e7e1df",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "MyEngine::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "Argonaut::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -89,6 +108,11 @@
 				"backtrace" : 2,
 				"fragment" : "-LC:\\Users\\renan\\Jogo_C++\\external\\SDL2\\lib",
 				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "libMyEngine.a",
+				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
@@ -117,8 +141,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "MyEngine",
-	"nameOnDisk" : "MyEngine.exe",
+	"name" : "Argonaut",
+	"nameOnDisk" : "Argonaut.exe",
 	"paths" : 
 	{
 		"build" : ".",

@@ -1,4 +1,4 @@
-CMakeFiles/MyEngine.dir/Main.cpp.obj: C:\Users\renan\Jogo_C++\Main.cpp \
+CMakeFiles/Argonaut.dir/Main.cpp.obj: C:\Users\renan\Jogo_C++\Main.cpp \
  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
@@ -282,4 +282,5 @@ CMakeFiles/MyEngine.dir/Main.cpp.obj: C:\Users\renan\Jogo_C++\Main.cpp \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_locale.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_misc.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_image.h \
- C:/Users/renan/Jogo_C++/external/SDL2/include/SDL.h
+ C:/Users/renan/Jogo_C++/external/SDL2/include/SDL.h \
+ C:/Users/renan/Jogo_C++/include/Game.h

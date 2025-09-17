@@ -63,10 +63,12 @@ CMAKE_BINARY_DIR = C:\Users\renan\Jogo_C++\build
 
 # The main recursive "all" target.
 all: CMakeFiles/MyEngine.dir/all
+all: CMakeFiles/Argonaut.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/MyEngine.dir/codegen
+codegen: CMakeFiles/Argonaut.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,6 +77,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/MyEngine.dir/clean
+clean: CMakeFiles/Argonaut.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -84,7 +87,7 @@ clean: CMakeFiles/MyEngine.dir/clean
 CMakeFiles/MyEngine.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\renan\Jogo_C++\build\CMakeFiles --progress-num=1,2 "Built target MyEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\renan\Jogo_C++\build\CMakeFiles --progress-num=3,4 "Built target MyEngine"
 .PHONY : CMakeFiles/MyEngine.dir/all
 
 # Build rule for subdir invocation for target.
@@ -101,13 +104,45 @@ MyEngine: CMakeFiles/MyEngine.dir/rule
 # codegen rule for target.
 CMakeFiles/MyEngine.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\renan\Jogo_C++\build\CMakeFiles --progress-num=1,2 "Finished codegen for target MyEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\renan\Jogo_C++\build\CMakeFiles --progress-num=3,4 "Finished codegen for target MyEngine"
 .PHONY : CMakeFiles/MyEngine.dir/codegen
 
 # clean rule for target.
 CMakeFiles/MyEngine.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/clean
 .PHONY : CMakeFiles/MyEngine.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Argonaut.dir
+
+# All Build rule for target.
+CMakeFiles/Argonaut.dir/all: CMakeFiles/MyEngine.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Argonaut.dir\build.make CMakeFiles/Argonaut.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Argonaut.dir\build.make CMakeFiles/Argonaut.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\renan\Jogo_C++\build\CMakeFiles --progress-num=1,2 "Built target Argonaut"
+.PHONY : CMakeFiles/Argonaut.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Argonaut.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\renan\Jogo_C++\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Argonaut.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\renan\Jogo_C++\build\CMakeFiles 0
+.PHONY : CMakeFiles/Argonaut.dir/rule
+
+# Convenience name for target.
+Argonaut: CMakeFiles/Argonaut.dir/rule
+.PHONY : Argonaut
+
+# codegen rule for target.
+CMakeFiles/Argonaut.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Argonaut.dir\build.make CMakeFiles/Argonaut.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\renan\Jogo_C++\build\CMakeFiles --progress-num=1,2 "Finished codegen for target Argonaut"
+.PHONY : CMakeFiles/Argonaut.dir/codegen
+
+# clean rule for target.
+CMakeFiles/Argonaut.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Argonaut.dir\build.make CMakeFiles/Argonaut.dir/clean
+.PHONY : CMakeFiles/Argonaut.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

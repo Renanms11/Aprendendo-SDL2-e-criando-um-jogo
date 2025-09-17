@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/renan/Jogo_C++/src/Game.cpp" "CMakeFiles/MyEngine.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/MyEngine.dir/src/Game.cpp.obj.d"
+  "C:/Users/renan/Jogo_C++/Main.cpp" "CMakeFiles/Argonaut.dir/Main.cpp.obj" "gcc" "CMakeFiles/Argonaut.dir/Main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "Argonaut",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,8 +40,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "Argonaut::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Argonaut-Debug-1b99e0a1dc89c27e6cbf.json",
+					"name" : "Argonaut",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "MyEngine::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MyEngine-Debug-9568db2bbb975b0b06a7.json",
+					"jsonFile" : "target-MyEngine-Debug-ac84ed722c1726e06367.json",
 					"name" : "MyEngine",
 					"projectIndex" : 0
 				}

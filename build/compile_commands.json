@@ -1,8 +1,14 @@
 [
 {
   "directory": "C:/Users/renan/Jogo_C++/build",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MyEngine.dir/includes_CXX.rsp -g -o CMakeFiles\\MyEngine.dir\\Main.cpp.obj -c C:\\Users\\renan\\Jogo_C++\\Main.cpp",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MyEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyEngine.dir\\src\\Game.cpp.obj -c C:\\Users\\renan\\Jogo_C++\\src\\Game.cpp",
+  "file": "C:/Users/renan/Jogo_C++/src/Game.cpp",
+  "output": "CMakeFiles/MyEngine.dir/src/Game.cpp.obj"
+},
+{
+  "directory": "C:/Users/renan/Jogo_C++/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Argonaut.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Argonaut.dir\\Main.cpp.obj -c C:\\Users\\renan\\Jogo_C++\\Main.cpp",
   "file": "C:/Users/renan/Jogo_C++/Main.cpp",
-  "output": "CMakeFiles/MyEngine.dir/Main.cpp.obj"
+  "output": "CMakeFiles/Argonaut.dir/Main.cpp.obj"
 }
 ]

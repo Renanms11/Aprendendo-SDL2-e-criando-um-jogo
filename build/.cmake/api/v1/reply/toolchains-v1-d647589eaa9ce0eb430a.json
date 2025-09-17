@@ -11,18 +11,18 @@
 					"includeDirectories" : 
 					[
 						"C:/mingw64/include/c++/15.2.0",
-						"C:/mingw64/include/c++/15.2.0/i686-w64-mingw32",
+						"C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32",
 						"C:/mingw64/include/c++/15.2.0/backward",
-						"C:/mingw64/lib/gcc/i686-w64-mingw32/15.2.0/include",
+						"C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include",
 						"C:/mingw64/include",
-						"C:/mingw64/lib/gcc/i686-w64-mingw32/15.2.0/include-fixed",
-						"C:/mingw64/i686-w64-mingw32/include"
+						"C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed",
+						"C:/mingw64/x86_64-w64-mingw32/include"
 					],
 					"linkDirectories" : 
 					[
-						"C:/mingw64/lib/gcc/i686-w64-mingw32/15.2.0",
+						"C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0",
 						"C:/mingw64/lib/gcc",
-						"C:/mingw64/i686-w64-mingw32/lib",
+						"C:/mingw64/x86_64-w64-mingw32/lib",
 						"C:/mingw64/lib"
 					],
 					"linkFrameworkDirectories" : [],

@@ -128,12 +128,25 @@ MyEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/build
 .PHONY : MyEngine/fast
 
+#=============================================================================
+# Target rules for targets named Argonaut
+
+# Build rule for target.
+Argonaut: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Argonaut
+.PHONY : Argonaut
+
+# fast build rule for target.
+Argonaut/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Argonaut.dir\build.make CMakeFiles/Argonaut.dir/build
+.PHONY : Argonaut/fast
+
 Main.obj: Main.cpp.obj
 .PHONY : Main.obj
 
 # target to build an object file
 Main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/Main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Argonaut.dir\build.make CMakeFiles/Argonaut.dir/Main.cpp.obj
 .PHONY : Main.cpp.obj
 
 Main.i: Main.cpp.i
@@ -141,7 +154,7 @@ Main.i: Main.cpp.i
 
 # target to preprocess a source file
 Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/Main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Argonaut.dir\build.make CMakeFiles/Argonaut.dir/Main.cpp.i
 .PHONY : Main.cpp.i
 
 Main.s: Main.cpp.s
@@ -149,8 +162,32 @@ Main.s: Main.cpp.s
 
 # target to generate assembly for a file
 Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/Main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Argonaut.dir\build.make CMakeFiles/Argonaut.dir/Main.cpp.s
 .PHONY : Main.cpp.s
+
+src/Game.obj: src/Game.cpp.obj
+.PHONY : src/Game.obj
+
+# target to build an object file
+src/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/Game.cpp.obj
+.PHONY : src/Game.cpp.obj
+
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
 
 # Help Target
 help:
@@ -160,10 +197,14 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Argonaut
 	@echo ... MyEngine
 	@echo ... Main.obj
 	@echo ... Main.i
 	@echo ... Main.s
+	@echo ... src/Game.obj
+	@echo ... src/Game.i
+	@echo ... src/Game.s
 .PHONY : help
 
 

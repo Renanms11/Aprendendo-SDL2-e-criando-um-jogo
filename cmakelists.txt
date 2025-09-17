@@ -1,17 +1,28 @@
 cmake_minimum_required(VERSION 3.18)
 project(Argonaut LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
 
 # Diretórios do SDL2
 set(SDL2_PATH "${CMAKE_SOURCE_DIR}/external/SDL2")
 include_directories("${SDL2_PATH}/include")
 link_directories("${SDL2_PATH}/lib")
 
+# ---- Biblioteca estática (Engine) ----
+add_library( MyEngine STATIC
+    src/Game.cpp 
+)
+
+# Headers públicos da engine (para poder incluir "Game.h")
+target_include_directories(MyEngine PUBLIC
+    "${CMAKE_SOURCE_DIR}/include"
+)
 
 # Executável
-add_executable(MyEngine Main.cpp)
+add_executable(Argonaut Main.cpp)
 
 # Linkagem correta
-target_link_libraries(MyEngine
+target_link_libraries(Argonaut
+    MyEngine
     mingw32
     SDL2main
     SDL2
