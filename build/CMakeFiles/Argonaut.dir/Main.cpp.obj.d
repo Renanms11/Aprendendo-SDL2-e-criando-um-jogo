@@ -283,4 +283,12 @@ CMakeFiles/Argonaut.dir/Main.cpp.obj: C:\Users\renan\Jogo_C++\Main.cpp \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_misc.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_image.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL.h \
- C:/Users/renan/Jogo_C++/include/Game.h
+ C:/Users/renan/Jogo_C++/include/Game.h \
+ C:/Users/renan/Jogo_C++/include/TextureManager.h \
+ C:/mingw64/include/c++/15.2.0/map \
+ C:/mingw64/include/c++/15.2.0/bits/stl_tree.h \
+ C:/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
+ C:/mingw64/include/c++/15.2.0/bits/node_handle.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_map.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
+ C:/mingw64/include/c++/15.2.0/bits/erase_if.h

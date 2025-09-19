@@ -2,6 +2,8 @@
 #define _Game_
 #include <SDL.h>
 #include <SDL_image.h>
+#include "TextureManager.h"
+
 class Game
 {
     public:
@@ -23,8 +25,8 @@ class Game
         bool isRunning;
         SDL_Window* g_Window;
         SDL_Renderer* g_Renderer;
-        SDL_Texture *gTexture;
-        SDL_Rect g_sourceRectangle;
-        SDL_Rect g_destinationRectangle;
+        int m_currentFrame;
+        
+
 };
 #endif

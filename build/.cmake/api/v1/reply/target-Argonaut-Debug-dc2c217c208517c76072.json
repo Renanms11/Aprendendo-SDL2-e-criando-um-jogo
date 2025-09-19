@@ -30,7 +30,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 21,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
@@ -42,13 +42,19 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 24,
+				"line" : 28,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
 				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 11,
 				"parent" : 0
 			}
 		]
@@ -69,7 +75,7 @@
 					"path" : "C:/Users/renan/Jogo_C++/external/SDL2/include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 5,
 					"path" : "C:/Users/renan/Jogo_C++/include"
 				}
 			],

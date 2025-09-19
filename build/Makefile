@@ -189,6 +189,30 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/TextureManager.obj: src/TextureManager.cpp.obj
+.PHONY : src/TextureManager.obj
+
+# target to build an object file
+src/TextureManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/TextureManager.cpp.obj
+.PHONY : src/TextureManager.cpp.obj
+
+src/TextureManager.i: src/TextureManager.cpp.i
+.PHONY : src/TextureManager.i
+
+# target to preprocess a source file
+src/TextureManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/TextureManager.cpp.i
+.PHONY : src/TextureManager.cpp.i
+
+src/TextureManager.s: src/TextureManager.cpp.s
+.PHONY : src/TextureManager.s
+
+# target to generate assembly for a file
+src/TextureManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/TextureManager.cpp.s
+.PHONY : src/TextureManager.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -205,6 +229,9 @@ help:
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
+	@echo ... src/TextureManager.obj
+	@echo ... src/TextureManager.i
+	@echo ... src/TextureManager.s
 .PHONY : help
 
 

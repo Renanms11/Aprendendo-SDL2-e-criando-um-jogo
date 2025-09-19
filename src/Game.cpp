@@ -51,8 +51,20 @@ bool Game::init(const char* title,int xpos , int ypos , bool fullscreen){
                 printf("Erro ao iniciar o render! %s\n",SDL_GetError());
                 sucess = false;
             }else{
-                //definindo a cor para limpar o render
-                SDL_SetRenderDrawColor(g_Renderer,255,255,255,255);
+
+                //definindo a cor para limpar o render,nesse caso preto
+                SDL_SetRenderDrawColor(g_Renderer,255,0,0,255);
+                //iniciando o SDL_IMAGE para carregar outros tipos de imagem. + moderno
+                int imgFlags = IMG_INIT_PNG | IMG_INIT_JPG;
+                if(!(IMG_Init(imgFlags) & imgFlags) ){
+                    printf( "Problema ao iniciar SDL_IMG ! %s\n", IMG_GetError());
+                    sucess = false;
+                }
+                        
+                if(!TheTextureManager::Instance()->load("assets/animate-alpha.png","animate",g_Renderer)){
+                    sucess = false;
+                }
+
             }
         }
     }
@@ -64,7 +76,10 @@ bool Game::init(const char* title,int xpos , int ypos , bool fullscreen){
 void Game::render(){
     // limpando o render  para desenhar
     SDL_RenderClear(g_Renderer);
-    // Renderizando a tela
+    TheTextureManager::Instance()->draw("animate",0,0,128,82,g_Renderer);
+    TheTextureManager::Instance()->drawFrame("animate",100,100,128,82,1,m_currentFrame,g_Renderer);
+ 
+   // Renderizando a tela
     SDL_RenderPresent(g_Renderer);
 }
 
@@ -82,17 +97,19 @@ void Game::handleEvents(){
 }
 
 void Game::update(){
-
+    m_currentFrame = int( ( ( SDL_GetTicks() / 100 ) % 6 ) );
 }
 
 void Game::clean(){
+   
     // Destruindo a tela
     SDL_DestroyWindow(g_Window);
     g_Window =  nullptr;
     // Destruindo o render
     SDL_DestroyRenderer(g_Renderer);
     g_Renderer = nullptr;
-    SDL_Quit();
+    IMG_Quit(); // fechando o SDL_IMAGE
+    SDL_Quit(); // fechando o SDL
 }
 
 

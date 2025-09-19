@@ -212,6 +212,7 @@ CMakeFiles/MyEngine.dir/src/Game.cpp.obj: \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_misc.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_image.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL.h \
+ C:/Users/renan/Jogo_C++/include/TextureManager.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
@@ -284,4 +285,10 @@ CMakeFiles/MyEngine.dir/src/Game.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/cstddef \
  C:/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
  C:/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
- C:/mingw64/include/c++/15.2.0/tuple
+ C:/mingw64/include/c++/15.2.0/tuple C:/mingw64/include/c++/15.2.0/map \
+ C:/mingw64/include/c++/15.2.0/bits/stl_tree.h \
+ C:/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
+ C:/mingw64/include/c++/15.2.0/bits/node_handle.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_map.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
+ C:/mingw64/include/c++/15.2.0/bits/erase_if.h

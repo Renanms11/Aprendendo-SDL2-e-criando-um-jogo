@@ -56,6 +56,7 @@ CMakeFiles/Argonaut.dir/Main.cpp.obj
  C:/Users/renan/Jogo_C++/external/SDL2/include/begin_code.h
  C:/Users/renan/Jogo_C++/external/SDL2/include/close_code.h
  C:/Users/renan/Jogo_C++/include/Game.h
+ C:/Users/renan/Jogo_C++/include/TextureManager.h
  C:/mingw64/include/c++/15.2.0/backward/binders.h
  C:/mingw64/include/c++/15.2.0/bit
  C:/mingw64/include/c++/15.2.0/bits/alloc_traits.h
@@ -67,6 +68,7 @@ CMakeFiles/Argonaut.dir/Main.cpp.obj
  C:/mingw64/include/c++/15.2.0/bits/concept_check.h
  C:/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h
  C:/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h
+ C:/mingw64/include/c++/15.2.0/bits/erase_if.h
  C:/mingw64/include/c++/15.2.0/bits/exception.h
  C:/mingw64/include/c++/15.2.0/bits/exception_defines.h
  C:/mingw64/include/c++/15.2.0/bits/functexcept.h
@@ -78,6 +80,7 @@ CMakeFiles/Argonaut.dir/Main.cpp.obj
  C:/mingw64/include/c++/15.2.0/bits/memoryfwd.h
  C:/mingw64/include/c++/15.2.0/bits/move.h
  C:/mingw64/include/c++/15.2.0/bits/new_allocator.h
+ C:/mingw64/include/c++/15.2.0/bits/node_handle.h
  C:/mingw64/include/c++/15.2.0/bits/ostream_insert.h
  C:/mingw64/include/c++/15.2.0/bits/postypes.h
  C:/mingw64/include/c++/15.2.0/bits/predefined_ops.h
@@ -92,7 +95,10 @@ CMakeFiles/Argonaut.dir/Main.cpp.obj
  C:/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
+ C:/mingw64/include/c++/15.2.0/bits/stl_map.h
+ C:/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/mingw64/include/c++/15.2.0/bits/stl_pair.h
+ C:/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/mingw64/include/c++/15.2.0/bits/string_view.tcc
  C:/mingw64/include/c++/15.2.0/bits/stringfwd.h
  C:/mingw64/include/c++/15.2.0/bits/uses_allocator.h
@@ -109,12 +115,14 @@ CMakeFiles/Argonaut.dir/Main.cpp.obj
  C:/mingw64/include/c++/15.2.0/cwchar
  C:/mingw64/include/c++/15.2.0/debug/assertions.h
  C:/mingw64/include/c++/15.2.0/debug/debug.h
+ C:/mingw64/include/c++/15.2.0/ext/aligned_buffer.h
  C:/mingw64/include/c++/15.2.0/ext/alloc_traits.h
  C:/mingw64/include/c++/15.2.0/ext/numeric_traits.h
  C:/mingw64/include/c++/15.2.0/ext/string_conversions.h
  C:/mingw64/include/c++/15.2.0/ext/type_traits.h
  C:/mingw64/include/c++/15.2.0/initializer_list
  C:/mingw64/include/c++/15.2.0/iosfwd
+ C:/mingw64/include/c++/15.2.0/map
  C:/mingw64/include/c++/15.2.0/new
  C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h
  C:/mingw64/include/c++/15.2.0/stdlib.h
