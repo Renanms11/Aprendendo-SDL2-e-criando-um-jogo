@@ -64,6 +64,8 @@ bool Game::init(const char* title,int xpos , int ypos , bool fullscreen){
                 if(!TheTextureManager::Instance()->load("assets/animate-alpha.png","animate",g_Renderer)){
                     sucess = false;
                 }
+                m_go.load(100, 100, 128, 82, "animate");
+                m_player.load(300, 300, 128, 82, "animate");
 
             }
         }
@@ -76,9 +78,9 @@ bool Game::init(const char* title,int xpos , int ypos , bool fullscreen){
 void Game::render(){
     // limpando o render  para desenhar
     SDL_RenderClear(g_Renderer);
-    TheTextureManager::Instance()->draw("animate",0,0,128,82,g_Renderer);
-    TheTextureManager::Instance()->drawFrame("animate",100,100,128,82,1,m_currentFrame,g_Renderer);
- 
+  
+    m_go.draw(g_Renderer);
+    m_player.draw(g_Renderer);
    // Renderizando a tela
     SDL_RenderPresent(g_Renderer);
 }
@@ -97,7 +99,8 @@ void Game::handleEvents(){
 }
 
 void Game::update(){
-    m_currentFrame = int( ( ( SDL_GetTicks() / 100 ) % 6 ) );
+    m_go.update();
+    m_player.update();
 }
 
 void Game::clean(){

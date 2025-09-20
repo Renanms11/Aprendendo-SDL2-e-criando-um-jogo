@@ -291,4 +291,6 @@ CMakeFiles/MyEngine.dir/src/Game.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/node_handle.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_map.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
- C:/mingw64/include/c++/15.2.0/bits/erase_if.h
+ C:/mingw64/include/c++/15.2.0/bits/erase_if.h \
+ C:/Users/renan/Jogo_C++/include/GameObject.h \
+ C:/Users/renan/Jogo_C++/include/Player.h

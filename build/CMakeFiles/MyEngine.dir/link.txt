@@ -1,2 +1,2 @@
-C:\mingw64\bin\ar.exe qc libMyEngine.a CMakeFiles/MyEngine.dir/src/Game.cpp.obj CMakeFiles/MyEngine.dir/src/TextureManager.cpp.obj
+C:\mingw64\bin\ar.exe qc libMyEngine.a CMakeFiles/MyEngine.dir/src/Game.cpp.obj CMakeFiles/MyEngine.dir/src/TextureManager.cpp.obj CMakeFiles/MyEngine.dir/src/GameObject.cpp.obj CMakeFiles/MyEngine.dir/src/Player.cpp.obj
 C:\mingw64\bin\ranlib.exe libMyEngine.a

@@ -50,12 +50,6 @@
 				"file" : 0,
 				"line" : 7,
 				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 11,
-				"parent" : 0
 			}
 		]
 	},
@@ -75,7 +69,7 @@
 					"path" : "C:/Users/renan/Jogo_C++/external/SDL2/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 3,
 					"path" : "C:/Users/renan/Jogo_C++/include"
 				}
 			],

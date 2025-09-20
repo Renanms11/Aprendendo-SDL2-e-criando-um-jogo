@@ -7,13 +7,13 @@ set(SDL2_PATH "${CMAKE_SOURCE_DIR}/external/SDL2")
 include_directories("${SDL2_PATH}/include")
 link_directories("${SDL2_PATH}/lib")
 
-# Include do seu código
-include_directories("${CMAKE_SOURCE_DIR}/include")
 
 # ---- Biblioteca estática (Engine) ----
 add_library(MyEngine STATIC
     src/Game.cpp
     src/TextureManager.cpp
+    src/GameObject.cpp
+    src/Player.cpp
 )
 
 # Headers públicos da engine
