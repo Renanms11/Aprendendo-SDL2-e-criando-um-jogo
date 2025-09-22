@@ -165,6 +165,30 @@ Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Argonaut.dir\build.make CMakeFiles/Argonaut.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
+src/Enemy.obj: src/Enemy.cpp.obj
+.PHONY : src/Enemy.obj
+
+# target to build an object file
+src/Enemy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj
+.PHONY : src/Enemy.cpp.obj
+
+src/Enemy.i: src/Enemy.cpp.i
+.PHONY : src/Enemy.i
+
+# target to preprocess a source file
+src/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/Enemy.cpp.i
+.PHONY : src/Enemy.cpp.i
+
+src/Enemy.s: src/Enemy.cpp.s
+.PHONY : src/Enemy.s
+
+# target to generate assembly for a file
+src/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/Enemy.cpp.s
+.PHONY : src/Enemy.cpp.s
+
 src/Game.obj: src/Game.cpp.obj
 .PHONY : src/Game.obj
 
@@ -188,30 +212,6 @@ src/Game.s: src/Game.cpp.s
 src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
-
-src/GameObject.obj: src/GameObject.cpp.obj
-.PHONY : src/GameObject.obj
-
-# target to build an object file
-src/GameObject.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/GameObject.cpp.obj
-.PHONY : src/GameObject.cpp.obj
-
-src/GameObject.i: src/GameObject.cpp.i
-.PHONY : src/GameObject.i
-
-# target to preprocess a source file
-src/GameObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/GameObject.cpp.i
-.PHONY : src/GameObject.cpp.i
-
-src/GameObject.s: src/GameObject.cpp.s
-.PHONY : src/GameObject.s
-
-# target to generate assembly for a file
-src/GameObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/GameObject.cpp.s
-.PHONY : src/GameObject.cpp.s
 
 src/Player.obj: src/Player.cpp.obj
 .PHONY : src/Player.obj
@@ -274,12 +274,12 @@ help:
 	@echo ... Main.obj
 	@echo ... Main.i
 	@echo ... Main.s
+	@echo ... src/Enemy.obj
+	@echo ... src/Enemy.i
+	@echo ... src/Enemy.s
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
-	@echo ... src/GameObject.obj
-	@echo ... src/GameObject.i
-	@echo ... src/GameObject.s
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s

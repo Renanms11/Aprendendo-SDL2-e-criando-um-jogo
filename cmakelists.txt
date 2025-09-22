@@ -12,8 +12,9 @@ link_directories("${SDL2_PATH}/lib")
 add_library(MyEngine STATIC
     src/Game.cpp
     src/TextureManager.cpp
-    src/GameObject.cpp
+    #src/GameObject.cpp removido virou classe abstrata
     src/Player.cpp
+    src/Enemy.cpp
 )
 
 # Headers públicos da engine

@@ -10,8 +10,6 @@
 
 class TextureManager{
     public:
-       
-        ~TextureManager();
         //função para carregar texturas, recebe o do arquivo com as imagens, o id que nos referimos a textura e o render
         bool load(std::string fileName , std::string id , SDL_Renderer*  pRenderer);
         //função para desenha, o id, pos x e y, largura e altura da imagem, o render, e por padrao sem rotaçao
@@ -21,7 +19,9 @@ class TextureManager{
         // criando o instanciador unico da classe.(com logica para haver so um objeto por jogo)
         static TextureManager* Instance(); // o static e para falar que o que o metodo e de class e não de uma instancia.
     private:
+        // construtor e destrutor da class
         TextureManager();//transformando a class em singleton( que so pode ter 1 instancia para todo programa)
+       ~TextureManager();
         // variavel para controlar a instanciação da classe
         static TextureManager* s_pInstance;
         // Mapa que guarda todas as texturas, chave-String : valor-SDL_Texture

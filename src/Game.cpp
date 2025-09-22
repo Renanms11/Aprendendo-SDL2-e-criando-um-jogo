@@ -64,8 +64,20 @@ bool Game::init(const char* title,int xpos , int ypos , bool fullscreen){
                 if(!TheTextureManager::Instance()->load("assets/animate-alpha.png","animate",g_Renderer)){
                     sucess = false;
                 }
-                m_go.load(100, 100, 128, 82, "animate");
-                m_player.load(300, 300, 128, 82, "animate");
+
+                
+                m_go = new GameObject();
+                m_player = new Player();
+                m_enemy =new Enemy();
+
+                m_go->load(100,100,128,82,"animate");
+                m_player->load(300,300,128,82,"animate");
+                m_enemy->load(0,0,128,82,"animate");
+
+
+                m_GameObjects.push_back(m_go);
+                m_GameObjects.push_back(m_player);
+                m_GameObjects.push_back(m_enemy);
 
             }
         }
@@ -73,16 +85,6 @@ bool Game::init(const char* title,int xpos , int ypos , bool fullscreen){
     // INICIANDO O JOGO E O MAIN LOOP   
     isRunning = true;
     return sucess;
-}
-
-void Game::render(){
-    // limpando o render  para desenhar
-    SDL_RenderClear(g_Renderer);
-  
-    m_go.draw(g_Renderer);
-    m_player.draw(g_Renderer);
-   // Renderizando a tela
-    SDL_RenderPresent(g_Renderer);
 }
 
 
@@ -99,9 +101,22 @@ void Game::handleEvents(){
 }
 
 void Game::update(){
-    m_go.update();
-    m_player.update();
+    for(std::vector<GameObject*>::size_type i = 0; i< m_GameObjects.size() ; i++){
+        m_GameObjects[i]->update();
+    }
 }
+
+void Game::render(){
+    // limpando o render  para desenhar
+    SDL_RenderClear(g_Renderer);
+  
+    for(std::vector<GameObject*>::size_type i = 0; i < m_GameObjects.size();i++){
+        m_GameObjects[i]->draw(g_Renderer);
+    }
+   // Renderizando a tela
+    SDL_RenderPresent(g_Renderer);
+}
+
 
 void Game::clean(){
    

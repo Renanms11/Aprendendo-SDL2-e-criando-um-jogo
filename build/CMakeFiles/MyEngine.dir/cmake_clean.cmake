@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj"
+  "CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj.d"
   "CMakeFiles/MyEngine.dir/src/Game.cpp.obj"
   "CMakeFiles/MyEngine.dir/src/Game.cpp.obj.d"
-  "CMakeFiles/MyEngine.dir/src/GameObject.cpp.obj"
-  "CMakeFiles/MyEngine.dir/src/GameObject.cpp.obj.d"
   "CMakeFiles/MyEngine.dir/src/Player.cpp.obj"
   "CMakeFiles/MyEngine.dir/src/Player.cpp.obj.d"
   "CMakeFiles/MyEngine.dir/src/TextureManager.cpp.obj"

@@ -293,4 +293,10 @@ CMakeFiles/Argonaut.dir/Main.cpp.obj: C:\Users\renan\Jogo_C++\Main.cpp \
  C:/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
  C:/mingw64/include/c++/15.2.0/bits/erase_if.h \
  C:/Users/renan/Jogo_C++/include/GameObject.h \
- C:/Users/renan/Jogo_C++/include/Player.h
+ C:/Users/renan/Jogo_C++/include/Player.h \
+ C:/Users/renan/Jogo_C++/include/Enemy.h \
+ C:/mingw64/include/c++/15.2.0/vector \
+ C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
+ C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
+ C:/mingw64/include/c++/15.2.0/bits/vector.tcc

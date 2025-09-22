@@ -13,15 +13,15 @@
 },
 {
   "directory": "C:/Users/renan/Jogo_C++/build",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MyEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyEngine.dir\\src\\GameObject.cpp.obj -c C:\\Users\\renan\\Jogo_C++\\src\\GameObject.cpp",
-  "file": "C:/Users/renan/Jogo_C++/src/GameObject.cpp",
-  "output": "CMakeFiles/MyEngine.dir/src/GameObject.cpp.obj"
-},
-{
-  "directory": "C:/Users/renan/Jogo_C++/build",
   "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MyEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyEngine.dir\\src\\Player.cpp.obj -c C:\\Users\\renan\\Jogo_C++\\src\\Player.cpp",
   "file": "C:/Users/renan/Jogo_C++/src/Player.cpp",
   "output": "CMakeFiles/MyEngine.dir/src/Player.cpp.obj"
+},
+{
+  "directory": "C:/Users/renan/Jogo_C++/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MyEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyEngine.dir\\src\\Enemy.cpp.obj -c C:\\Users\\renan\\Jogo_C++\\src\\Enemy.cpp",
+  "file": "C:/Users/renan/Jogo_C++/src/Enemy.cpp",
+  "output": "CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj"
 },
 {
   "directory": "C:/Users/renan/Jogo_C++/build",

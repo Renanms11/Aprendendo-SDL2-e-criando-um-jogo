@@ -1,0 +1,43 @@
+Core de Engine (sua autoria):
+
+Sistema de GameObjects, loop de jogo, input, render (SDL + depois OpenGL/Vulkan).
+
+Asset manager, cena, etc.
+
+Middleware/Libs AAA já consolidadas:
+
+Áudio → FMOD (padrão da indústria).
+
+Física → Box2D (2D) + Bullet (3D).
+
+IA → BehaviorTree.CPP, GOAP, OpenSteer.
+
+Pathfinding → Recast & Detour.
+
+UI Dev/Debug → Dear ImGui.
+
+Networking → ENet.
+
+Isso dá pra você:
+
+Portfólio de respeito – mostra que você entende tanto de arquitetura de engine quanto de integrar middleware AAA.
+
+Flexibilidade – dá pra fazer 2D, 2.5D e até 3D futuramente.
+
+Open Source atrativo – muita gente gosta de engines leves, modulares e bem explicadas (diferente de pegar logo uma Unreal/Unity que são pesadonas).
+
+Aprendizado real – você aprende como as engrenagens funcionam, sem depender de engine pronta.
+
+Muita engine caseira que começou como projeto pessoal (Godot, Raylib, Cocos2d) virou grande porque tinha uma proposta clara e comunidade.
+
+👉 Minha sugestão:
+
+Documenta tudo bem explicado (README bonito no GitHub, exemplos simples de jogo).
+
+Faz um ou dois joguinhos completos (tipo um MegaMan clone em 2D, e um top-down com pathfinding/IA).
+
+Depois mostra que dá pra escalar pra 3D com OpenGL/Vulkan.
+
+Aí sim você terá uma engine de portfólio + projeto open source real.
+
+Quer que eu te mostre como você poderia organizar os módulos da sua engine (um diagrama tipo “camadas” igual engines profissionais)?
