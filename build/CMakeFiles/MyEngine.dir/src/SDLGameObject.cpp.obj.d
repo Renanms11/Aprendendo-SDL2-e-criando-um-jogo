@@ -1,6 +1,5 @@
-CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj: \
- C:\Users\renan\Jogo_C++\src\Enemy.cpp \
- C:/Users/renan/Jogo_C++/include/Enemy.h \
+CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj: \
+ C:\Users\renan\Jogo_C++\src\SDLGameObject.cpp \
  C:/Users/renan/Jogo_C++/include/SDLGameObject.h \
  C:/Users/renan/Jogo_C++/include/GameObject.h \
  C:/Users/renan/Jogo_C++/include/LoaderParams.h \
@@ -103,6 +102,7 @@ CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
  C:/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/mingw64/include/c++/15.2.0/tuple \
+ C:/Users/renan/Jogo_C++/include/TextureManager.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_main.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_stdinc.h \
@@ -286,10 +286,8 @@ CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj: \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_version.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_locale.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_misc.h \
- C:/Users/renan/Jogo_C++/include/Game.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_image.h \
  C:/Users/renan/Jogo_C++/external/SDL2/include/SDL.h \
- C:/Users/renan/Jogo_C++/include/TextureManager.h \
  C:/mingw64/include/c++/15.2.0/map \
  C:/mingw64/include/c++/15.2.0/bits/stl_tree.h \
  C:/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
@@ -297,11 +295,13 @@ CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/stl_map.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
  C:/mingw64/include/c++/15.2.0/bits/erase_if.h \
+ C:/Users/renan/Jogo_C++/include/Game.h \
+ C:/Users/renan/Jogo_C++/include/TextureManager.h \
  C:/Users/renan/Jogo_C++/include/Player.h \
+ C:/Users/renan/Jogo_C++/include/SDLGameObject.h \
  C:/Users/renan/Jogo_C++/include/Enemy.h \
  C:/mingw64/include/c++/15.2.0/vector \
  C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_vector.h \
  C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
- C:/mingw64/include/c++/15.2.0/bits/vector.tcc \
- C:/Users/renan/Jogo_C++/include/TextureManager.h
+ C:/mingw64/include/c++/15.2.0/bits/vector.tcc

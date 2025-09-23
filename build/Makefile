@@ -237,6 +237,30 @@ src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/SDLGameObject.obj: src/SDLGameObject.cpp.obj
+.PHONY : src/SDLGameObject.obj
+
+# target to build an object file
+src/SDLGameObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj
+.PHONY : src/SDLGameObject.cpp.obj
+
+src/SDLGameObject.i: src/SDLGameObject.cpp.i
+.PHONY : src/SDLGameObject.i
+
+# target to preprocess a source file
+src/SDLGameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.i
+.PHONY : src/SDLGameObject.cpp.i
+
+src/SDLGameObject.s: src/SDLGameObject.cpp.s
+.PHONY : src/SDLGameObject.s
+
+# target to generate assembly for a file
+src/SDLGameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyEngine.dir\build.make CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.s
+.PHONY : src/SDLGameObject.cpp.s
+
 src/TextureManager.obj: src/TextureManager.cpp.obj
 .PHONY : src/TextureManager.obj
 
@@ -283,6 +307,9 @@ help:
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s
+	@echo ... src/SDLGameObject.obj
+	@echo ... src/SDLGameObject.i
+	@echo ... src/SDLGameObject.s
 	@echo ... src/TextureManager.obj
 	@echo ... src/TextureManager.i
 	@echo ... src/TextureManager.s

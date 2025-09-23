@@ -11,10 +11,10 @@
 class Game
 {
     public:
-        
+
         static Game* Instance();
         //função para iniciar o jogo
-        bool init(const char* title, int xpos, int ypos, bool fullscreen);// varial do gameloop iniciado
+        bool init(const char* title, int xpos, int ypos, int widthSize,int heightSize, bool fullscreen);// varial do gameloop iniciado
         //função para renderizar o jogo
         void render();
         //funçao para tratar os eventos (inputs)

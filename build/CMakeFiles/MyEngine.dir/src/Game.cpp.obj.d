@@ -293,7 +293,9 @@ CMakeFiles/MyEngine.dir/src/Game.cpp.obj: \
  C:/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
  C:/mingw64/include/c++/15.2.0/bits/erase_if.h \
  C:/Users/renan/Jogo_C++/include/GameObject.h \
+ C:/Users/renan/Jogo_C++/include/LoaderParams.h \
  C:/Users/renan/Jogo_C++/include/Player.h \
+ C:/Users/renan/Jogo_C++/include/SDLGameObject.h \
  C:/Users/renan/Jogo_C++/include/Enemy.h \
  C:/mingw64/include/c++/15.2.0/vector \
  C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \

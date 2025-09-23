@@ -131,12 +131,28 @@ CMakeFiles/MyEngine.dir/src/Enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyEngine.dir/src/Enemy.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\renan\Jogo_C++\src\Enemy.cpp -o CMakeFiles\MyEngine.dir\src\Enemy.cpp.s
 
+CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj: CMakeFiles/MyEngine.dir/flags.make
+CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj: CMakeFiles/MyEngine.dir/includes_CXX.rsp
+CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj: C:/Users/renan/Jogo_C++/src/SDLGameObject.cpp
+CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj: CMakeFiles/MyEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\renan\Jogo_C++\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj -MF CMakeFiles\MyEngine.dir\src\SDLGameObject.cpp.obj.d -o CMakeFiles\MyEngine.dir\src\SDLGameObject.cpp.obj -c C:\Users\renan\Jogo_C++\src\SDLGameObject.cpp
+
+CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\renan\Jogo_C++\src\SDLGameObject.cpp > CMakeFiles\MyEngine.dir\src\SDLGameObject.cpp.i
+
+CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\renan\Jogo_C++\src\SDLGameObject.cpp -o CMakeFiles\MyEngine.dir\src\SDLGameObject.cpp.s
+
 # Object files for target MyEngine
 MyEngine_OBJECTS = \
 "CMakeFiles/MyEngine.dir/src/Game.cpp.obj" \
 "CMakeFiles/MyEngine.dir/src/TextureManager.cpp.obj" \
 "CMakeFiles/MyEngine.dir/src/Player.cpp.obj" \
-"CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj"
+"CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj" \
+"CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj"
 
 # External object files for target MyEngine
 MyEngine_EXTERNAL_OBJECTS =
@@ -145,9 +161,10 @@ libMyEngine.a: CMakeFiles/MyEngine.dir/src/Game.cpp.obj
 libMyEngine.a: CMakeFiles/MyEngine.dir/src/TextureManager.cpp.obj
 libMyEngine.a: CMakeFiles/MyEngine.dir/src/Player.cpp.obj
 libMyEngine.a: CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj
+libMyEngine.a: CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj
 libMyEngine.a: CMakeFiles/MyEngine.dir/build.make
 libMyEngine.a: CMakeFiles/MyEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\renan\Jogo_C++\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libMyEngine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\renan\Jogo_C++\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libMyEngine.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\MyEngine.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MyEngine.dir\link.txt --verbose=$(VERBOSE)
 

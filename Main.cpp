@@ -1,28 +1,30 @@
 #include <stdio.h>
-#include <string>
+#include <iostream>
 #include <SDL.h>
 #include <SDL_image.h>
 #include "Game.h"
 
-
+const int SCREEN_WIDTH = 640;
+const int SCREEN_HEIGHT = 480;
 
 Game* g_game = 0;
 
 
 int main(int argc , char* argv[]){
 
-    int flags {0};
-
-    std::string gameName = "Argonaut";
-    g_game = new Game();
-    g_game->init(gameName.c_str(),100,100,false);
-
-    while(g_game -> running()){ 
-        g_game -> handleEvents();
-        g_game -> update();
-        g_game -> render();
-        SDL_Delay(10);
+    if(TheGame::Instance()->init("Argonaut",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,SCREEN_WIDTH,SCREEN_HEIGHT,false)){
+        while(TheGame::Instance()->running()){
+            TheGame::Instance()->handleEvents();
+            TheGame::Instance()->update();
+            TheGame::Instance()->render();
+            SDL_Delay(100);
+        }
+    }else{
+        std::cout << "Não foi possivel iniciar o Jogo" << std::endl;
+        return -1;
     }
-    delete g_game; // destruindo o  game
+
+    TheGame::Instance()->clean();
+    
     return 0;
 }
