@@ -61,6 +61,7 @@ CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj: C:/Users/renan/Jogo_C++/src/Enemy.cpp
   C:/Users/renan/Jogo_C++/include/Player.h \
   C:/Users/renan/Jogo_C++/include/SDLGameObject.h \
   C:/Users/renan/Jogo_C++/include/TextureManager.h \
+  C:/Users/renan/Jogo_C++/include/Vector2D.h \
   C:/mingw64/include/c++/15.2.0/backward/binders.h \
   C:/mingw64/include/c++/15.2.0/bit \
   C:/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
@@ -92,6 +93,7 @@ CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj: C:/Users/renan/Jogo_C++/src/Enemy.cpp
   C:/mingw64/include/c++/15.2.0/bits/range_access.h \
   C:/mingw64/include/c++/15.2.0/bits/refwrap.h \
   C:/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/mingw64/include/c++/15.2.0/bits/specfun.h \
   C:/mingw64/include/c++/15.2.0/bits/std_abs.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
@@ -116,6 +118,7 @@ CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj: C:/Users/renan/Jogo_C++/src/Enemy.cpp
   C:/mingw64/include/c++/15.2.0/cctype \
   C:/mingw64/include/c++/15.2.0/cerrno \
   C:/mingw64/include/c++/15.2.0/clocale \
+  C:/mingw64/include/c++/15.2.0/cmath \
   C:/mingw64/include/c++/15.2.0/concepts \
   C:/mingw64/include/c++/15.2.0/cstddef \
   C:/mingw64/include/c++/15.2.0/cstdio \
@@ -130,12 +133,26 @@ CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj: C:/Users/renan/Jogo_C++/src/Enemy.cpp
   C:/mingw64/include/c++/15.2.0/ext/type_traits.h \
   C:/mingw64/include/c++/15.2.0/initializer_list \
   C:/mingw64/include/c++/15.2.0/iosfwd \
+  C:/mingw64/include/c++/15.2.0/limits \
   C:/mingw64/include/c++/15.2.0/map \
+  C:/mingw64/include/c++/15.2.0/math.h \
   C:/mingw64/include/c++/15.2.0/new \
   C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
   C:/mingw64/include/c++/15.2.0/stdlib.h \
   C:/mingw64/include/c++/15.2.0/string \
   C:/mingw64/include/c++/15.2.0/string_view \
+  C:/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h \
   C:/mingw64/include/c++/15.2.0/tuple \
   C:/mingw64/include/c++/15.2.0/type_traits \
   C:/mingw64/include/c++/15.2.0/vector \
@@ -286,6 +303,7 @@ CMakeFiles/MyEngine.dir/src/Enemy.cpp.obj: C:/Users/renan/Jogo_C++/src/Enemy.cpp
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/locale.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/math.h \
   C:/mingw64/x86_64-w64-mingw32/include/process.h \
   C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
@@ -366,6 +384,7 @@ CMakeFiles/MyEngine.dir/src/Game.cpp.obj: C:/Users/renan/Jogo_C++/src/Game.cpp \
   C:/Users/renan/Jogo_C++/include/Player.h \
   C:/Users/renan/Jogo_C++/include/SDLGameObject.h \
   C:/Users/renan/Jogo_C++/include/TextureManager.h \
+  C:/Users/renan/Jogo_C++/include/Vector2D.h \
   C:/mingw64/include/c++/15.2.0/backward/binders.h \
   C:/mingw64/include/c++/15.2.0/bit \
   C:/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
@@ -397,6 +416,7 @@ CMakeFiles/MyEngine.dir/src/Game.cpp.obj: C:/Users/renan/Jogo_C++/src/Game.cpp \
   C:/mingw64/include/c++/15.2.0/bits/range_access.h \
   C:/mingw64/include/c++/15.2.0/bits/refwrap.h \
   C:/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/mingw64/include/c++/15.2.0/bits/specfun.h \
   C:/mingw64/include/c++/15.2.0/bits/std_abs.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
@@ -421,6 +441,7 @@ CMakeFiles/MyEngine.dir/src/Game.cpp.obj: C:/Users/renan/Jogo_C++/src/Game.cpp \
   C:/mingw64/include/c++/15.2.0/cctype \
   C:/mingw64/include/c++/15.2.0/cerrno \
   C:/mingw64/include/c++/15.2.0/clocale \
+  C:/mingw64/include/c++/15.2.0/cmath \
   C:/mingw64/include/c++/15.2.0/concepts \
   C:/mingw64/include/c++/15.2.0/cstddef \
   C:/mingw64/include/c++/15.2.0/cstdio \
@@ -435,12 +456,26 @@ CMakeFiles/MyEngine.dir/src/Game.cpp.obj: C:/Users/renan/Jogo_C++/src/Game.cpp \
   C:/mingw64/include/c++/15.2.0/ext/type_traits.h \
   C:/mingw64/include/c++/15.2.0/initializer_list \
   C:/mingw64/include/c++/15.2.0/iosfwd \
+  C:/mingw64/include/c++/15.2.0/limits \
   C:/mingw64/include/c++/15.2.0/map \
+  C:/mingw64/include/c++/15.2.0/math.h \
   C:/mingw64/include/c++/15.2.0/new \
   C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
   C:/mingw64/include/c++/15.2.0/stdlib.h \
   C:/mingw64/include/c++/15.2.0/string \
   C:/mingw64/include/c++/15.2.0/string_view \
+  C:/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h \
   C:/mingw64/include/c++/15.2.0/tuple \
   C:/mingw64/include/c++/15.2.0/type_traits \
   C:/mingw64/include/c++/15.2.0/vector \
@@ -591,6 +626,7 @@ CMakeFiles/MyEngine.dir/src/Game.cpp.obj: C:/Users/renan/Jogo_C++/src/Game.cpp \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/locale.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/math.h \
   C:/mingw64/x86_64-w64-mingw32/include/process.h \
   C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
@@ -671,6 +707,7 @@ CMakeFiles/MyEngine.dir/src/Player.cpp.obj: C:/Users/renan/Jogo_C++/src/Player.c
   C:/Users/renan/Jogo_C++/include/Player.h \
   C:/Users/renan/Jogo_C++/include/SDLGameObject.h \
   C:/Users/renan/Jogo_C++/include/TextureManager.h \
+  C:/Users/renan/Jogo_C++/include/Vector2D.h \
   C:/mingw64/include/c++/15.2.0/backward/binders.h \
   C:/mingw64/include/c++/15.2.0/bit \
   C:/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
@@ -702,6 +739,7 @@ CMakeFiles/MyEngine.dir/src/Player.cpp.obj: C:/Users/renan/Jogo_C++/src/Player.c
   C:/mingw64/include/c++/15.2.0/bits/range_access.h \
   C:/mingw64/include/c++/15.2.0/bits/refwrap.h \
   C:/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/mingw64/include/c++/15.2.0/bits/specfun.h \
   C:/mingw64/include/c++/15.2.0/bits/std_abs.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
@@ -726,6 +764,7 @@ CMakeFiles/MyEngine.dir/src/Player.cpp.obj: C:/Users/renan/Jogo_C++/src/Player.c
   C:/mingw64/include/c++/15.2.0/cctype \
   C:/mingw64/include/c++/15.2.0/cerrno \
   C:/mingw64/include/c++/15.2.0/clocale \
+  C:/mingw64/include/c++/15.2.0/cmath \
   C:/mingw64/include/c++/15.2.0/concepts \
   C:/mingw64/include/c++/15.2.0/cstddef \
   C:/mingw64/include/c++/15.2.0/cstdio \
@@ -740,12 +779,26 @@ CMakeFiles/MyEngine.dir/src/Player.cpp.obj: C:/Users/renan/Jogo_C++/src/Player.c
   C:/mingw64/include/c++/15.2.0/ext/type_traits.h \
   C:/mingw64/include/c++/15.2.0/initializer_list \
   C:/mingw64/include/c++/15.2.0/iosfwd \
+  C:/mingw64/include/c++/15.2.0/limits \
   C:/mingw64/include/c++/15.2.0/map \
+  C:/mingw64/include/c++/15.2.0/math.h \
   C:/mingw64/include/c++/15.2.0/new \
   C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
   C:/mingw64/include/c++/15.2.0/stdlib.h \
   C:/mingw64/include/c++/15.2.0/string \
   C:/mingw64/include/c++/15.2.0/string_view \
+  C:/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h \
   C:/mingw64/include/c++/15.2.0/tuple \
   C:/mingw64/include/c++/15.2.0/type_traits \
   C:/mingw64/include/c++/15.2.0/vector \
@@ -896,6 +949,7 @@ CMakeFiles/MyEngine.dir/src/Player.cpp.obj: C:/Users/renan/Jogo_C++/src/Player.c
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/locale.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/math.h \
   C:/mingw64/x86_64-w64-mingw32/include/process.h \
   C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
@@ -976,6 +1030,7 @@ CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj: C:/Users/renan/Jogo_C++/src/S
   C:/Users/renan/Jogo_C++/include/Player.h \
   C:/Users/renan/Jogo_C++/include/SDLGameObject.h \
   C:/Users/renan/Jogo_C++/include/TextureManager.h \
+  C:/Users/renan/Jogo_C++/include/Vector2D.h \
   C:/mingw64/include/c++/15.2.0/backward/binders.h \
   C:/mingw64/include/c++/15.2.0/bit \
   C:/mingw64/include/c++/15.2.0/bits/alloc_traits.h \
@@ -1007,6 +1062,7 @@ CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj: C:/Users/renan/Jogo_C++/src/S
   C:/mingw64/include/c++/15.2.0/bits/range_access.h \
   C:/mingw64/include/c++/15.2.0/bits/refwrap.h \
   C:/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/mingw64/include/c++/15.2.0/bits/specfun.h \
   C:/mingw64/include/c++/15.2.0/bits/std_abs.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
@@ -1031,6 +1087,7 @@ CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj: C:/Users/renan/Jogo_C++/src/S
   C:/mingw64/include/c++/15.2.0/cctype \
   C:/mingw64/include/c++/15.2.0/cerrno \
   C:/mingw64/include/c++/15.2.0/clocale \
+  C:/mingw64/include/c++/15.2.0/cmath \
   C:/mingw64/include/c++/15.2.0/concepts \
   C:/mingw64/include/c++/15.2.0/cstddef \
   C:/mingw64/include/c++/15.2.0/cstdio \
@@ -1045,12 +1102,26 @@ CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj: C:/Users/renan/Jogo_C++/src/S
   C:/mingw64/include/c++/15.2.0/ext/type_traits.h \
   C:/mingw64/include/c++/15.2.0/initializer_list \
   C:/mingw64/include/c++/15.2.0/iosfwd \
+  C:/mingw64/include/c++/15.2.0/limits \
   C:/mingw64/include/c++/15.2.0/map \
+  C:/mingw64/include/c++/15.2.0/math.h \
   C:/mingw64/include/c++/15.2.0/new \
   C:/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
   C:/mingw64/include/c++/15.2.0/stdlib.h \
   C:/mingw64/include/c++/15.2.0/string \
   C:/mingw64/include/c++/15.2.0/string_view \
+  C:/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
+  C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h \
   C:/mingw64/include/c++/15.2.0/tuple \
   C:/mingw64/include/c++/15.2.0/type_traits \
   C:/mingw64/include/c++/15.2.0/vector \
@@ -1201,6 +1272,7 @@ CMakeFiles/MyEngine.dir/src/SDLGameObject.cpp.obj: C:/Users/renan/Jogo_C++/src/S
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/locale.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/math.h \
   C:/mingw64/x86_64-w64-mingw32/include/process.h \
   C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
@@ -1580,7 +1652,29 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xsavecintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/x86intrin.h:
 
-C:/mingw64/include/c++/15.2.0/concepts:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/waitpkgintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/vaesintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/usermsrintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/uintrintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tsxldtrkintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tmmintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/smmintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sm3intrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/shaintrin.h:
 
 C:/mingw64/include/c++/15.2.0/ext/aligned_buffer.h:
 
@@ -1606,6 +1700,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxmovrsintrin.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_multimap.h:
 
+C:/mingw64/include/c++/15.2.0/cmath:
+
 C:/mingw64/include/c++/15.2.0/debug/assertions.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clzerointrin.h:
@@ -1614,7 +1710,13 @@ C:/mingw64/include/c++/15.2.0/bits/stl_construct.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_stdinc.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/math.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtileintrin.h:
+
+C:/mingw64/include/c++/15.2.0/bits/specfun.h:
+
+C:/Users/renan/Jogo_C++/include/Player.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_function.h:
 
@@ -1632,11 +1734,17 @@ C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
 
 C:/mingw64/include/c++/15.2.0/bits/memoryfwd.h:
 
-C:/mingw64/include/c++/15.2.0/bits/functional_hash.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tbmintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2bf16intrin.h:
 
 C:/mingw64/include/c++/15.2.0/bits/exception_defines.h:
 
 C:/mingw64/include/c++/15.2.0/bits/std_abs.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/vpclmulqdqintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2minmaxintrin.h:
 
 C:/mingw64/include/c++/15.2.0/bits/move.h:
 
@@ -1647,10 +1755,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmivlintrin.h:
 C:/mingw64/include/c++/15.2.0/bits/exception.h:
 
 C:/mingw64/include/c++/15.2.0/vector:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2bf16intrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tbmintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bitalgintrin.h:
 
@@ -1676,15 +1780,15 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512dqintrin.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_messagebox.h:
 
-C:/mingw64/include/c++/15.2.0/string:
+C:/mingw64/include/c++/15.2.0/tr1/modified_bessel_func.tcc:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tsxldtrkintrin.h:
+C:/mingw64/include/c++/15.2.0/string:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_render.h:
 
-C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_power.h:
+C:/Users/renan/Jogo_C++/include/Vector2D.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h:
+C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_power.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_locale.h:
 
@@ -1720,7 +1824,7 @@ C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/adxintrin.h:
 
-C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_hidapi.h:
+C:/mingw64/include/c++/15.2.0/concepts:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
 
@@ -1752,13 +1856,9 @@ C:/mingw64/x86_64-w64-mingw32/include/errno.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_cpuinfo.h:
 
-C:/mingw64/include/c++/15.2.0/ext/type_traits.h:
-
 C:/mingw64/include/c++/15.2.0/bits/stl_iterator.h:
 
 C:/mingw64/include/c++/15.2.0/debug/debug.h:
-
-C:/Users/renan/Jogo_C++/include/Player.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_atomic.h:
 
@@ -1793,6 +1893,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxfp8intrin.h:
 C:/mingw64/include/c++/15.2.0/initializer_list:
 
 C:/Users/renan/Jogo_C++/include/SDLGameObject.h:
+
+C:/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_blendmode.h:
 
@@ -1852,8 +1954,6 @@ C:/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fxsrintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h:
-
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_config_windows.h:
 
 C:/mingw64/include/c++/15.2.0/bit:
@@ -1863,6 +1963,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtransposeintrin.h:
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_metal.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_platform.h:
+
+C:/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc:
 
 C:/mingw64/include/c++/15.2.0/bits/ptr_traits.h:
 
@@ -1878,8 +1980,6 @@ C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_config.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_mutex.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/uintrintrin.h:
-
 C:/Users/renan/Jogo_C++/include/Game.h:
 
 C:/mingw64/include/c++/15.2.0/bits/localefwd.h:
@@ -1888,13 +1988,11 @@ C:/Users/renan/Jogo_C++/include/TextureManager.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/begin_code.h:
 
+C:/mingw64/include/c++/15.2.0/tr1/special_function_util.h:
+
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_quit.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2convertintrin.h:
-
-C:/mingw64/include/c++/15.2.0/bits/new_allocator.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitintrin.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_bvector.h:
 
@@ -1914,15 +2012,45 @@ C:/Users/renan/Jogo_C++/include/textureManager.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512ifmavlintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h:
-
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_mouse.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_version.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pconfigintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/smmintrin.h:
+C:/mingw64/include/c++/15.2.0/ext/type_traits.h:
+
+C:/mingw64/include/c++/15.2.0/math.h:
+
+C:/mingw64/include/c++/15.2.0/bits/functional_hash.h:
+
+C:/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/f16cintrin.h:
+
+C:/mingw64/include/c++/15.2.0/tr1/beta_function.tcc:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512minmaxintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxvnniint16intrin.h:
+
+C:/mingw64/include/c++/15.2.0/tr1/exp_integral.tcc:
+
+C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc:
+
+C:/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc:
+
+C:/mingw64/include/c++/15.2.0/bits/new_allocator.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitintrin.h:
+
+C:/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc:
+
+C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_hidapi.h:
+
+C:/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc:
+
+C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc:
 
 C:/mingw64/include/c++/15.2.0/tuple:
 
@@ -1953,10 +2081,6 @@ C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_assert.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512convertintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512mediaintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512minmaxintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxvnniint16intrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2-512satcvtintrin.h:
 
@@ -1993,8 +2117,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cetintrin.h:
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_filesystem.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sgxintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tmmintrin.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
 
@@ -2056,23 +2178,17 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxvnniintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/bmi2intrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/usermsrintrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/clwbintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cpuid.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/enqcmdintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/f16cintrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fmaintrin.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_rwops.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/gfniintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/vaesintrin.h:
 
 C:/mingw64/include/c++/15.2.0/bits/invoke.h:
 
@@ -2087,8 +2203,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
 C:/mingw64/include/c++/15.2.0/ext/numeric_traits.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm3dnow.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sm3intrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bitalgvlintrin.h:
 
@@ -2110,17 +2224,13 @@ C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_keycode.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/raointintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2minmaxintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/vpclmulqdqintrin.h:
-
 C:/Users/renan/Jogo_C++/src/Game.cpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rdseedintrin.h:
 
-C:/mingw64/include/c++/15.2.0/map:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/wbnoinvdintrin.h:
+
+C:/mingw64/include/c++/15.2.0/map:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rtmintrin.h:
 
@@ -2128,8 +2238,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/lwpintrin.h:
 
 C:/Users/renan/Jogo_C++/external/SDL2/include/SDL_system.h:
 
+C:/mingw64/include/c++/15.2.0/limits:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/serializeintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/shaintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/waitpkgintrin.h:

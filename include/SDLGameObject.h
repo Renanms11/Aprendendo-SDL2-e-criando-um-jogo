@@ -2,6 +2,7 @@
 #define _SDLGameObject_
 
 #include "GameObject.h"
+#include "Vector2D.h"
 
 class SDLGameObject : public GameObject{
     public:
@@ -10,13 +11,19 @@ class SDLGameObject : public GameObject{
         virtual void update();
         virtual void clean();
     protected:
-        int m_x;
-        int m_y;
+        // Vetores para:posição do objeto,velocidade,aceleração
+        Vector2D m_position;
+        Vector2D m_velocity;
+        Vector2D m_acceleration;
 
+        //largura e altura do sprite
         int m_width;
         int m_height;
+
+        // variaveis de para controle de animação
         int m_currentRow;
         int m_currentFrame;
+        // nome/id da textura
         std::string m_textureID;
 };
 
